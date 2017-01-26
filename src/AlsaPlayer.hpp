@@ -32,7 +32,6 @@ private:
 
     bool waitRead;
     bool waitWrite;
-    std::size_t bufferWritten;
 };
 
 } // namespace baaplay

@@ -25,7 +25,6 @@ AlsaPlayer::AlsaPlayer(boost::asio::io_service& ioService, std::string alsaDevic
 void AlsaPlayer::Play(std::string filename)
 {
     int fd = open(filename.c_str(), O_RDONLY);
-    //int fd = ::dup(STDIN_FILENO);
     inputDescriptor.assign(fd);
 
     ReadFromFile();
